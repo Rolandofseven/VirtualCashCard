@@ -7,7 +7,7 @@ using VirtualCashCard.Services;
 
 namespace VirtualCashCard.States
 {
-    public class ShowBalance
+    public class ShowBalanceScreen
     {
         public void ShowScreen()
         {

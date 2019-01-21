@@ -7,11 +7,11 @@ using VirtualCashCard.Models;
 
 namespace VirtualCashCard.States  
 {
-    public class NoCardState 
+    public class NoCardScreen 
     {
         private readonly UserRepository  _userRepository;
 
-        public NoCardState()
+        public NoCardScreen()
         {
             _userRepository = new UserRepository();
         }

@@ -57,18 +57,18 @@ namespace VirtualCashCard
                 switch (CurrentState)
                 {
                     case "NO_CARD":
-                        _currentUser = new NoCardState().GetUser();
+                        _currentUser = new NoCardScreen().GetUser();
                         if (_currentUser != null)
                         {
                             ChangeScreen("SHOW_MENU");
                         }
                         break;
                     case "SHOW_BALANCE":
-                        (new ShowBalance()).ShowScreen();
+                        (new ShowBalanceScreen()).ShowScreen();
                         ChangeScreen("SHOW_MENU");
                         break;
                     case "SHOW_MENU":
-                        int menuSelction = new MainMenuState().ShowScreen();
+                        int menuSelction = new MainMenuScreen().ShowScreen();
                         ProcessMainMenu(menuSelction);
                         break;
                 }

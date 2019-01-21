@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace VirtualCashCard.States
 {
-    public class MainMenuState
+    public class MainMenuScreen
     {
         public int ShowScreen()
         {
