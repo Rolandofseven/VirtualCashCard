@@ -68,7 +68,7 @@ namespace VirtualCashCard
                         ChangeScreen("SHOW_MENU");
                         break;
                     case "SHOW_MENU":
-                        int menuSelction = new MainMenuState().GetNextScreen();
+                        int menuSelction = new MainMenuState().ShowScreen();
                         ProcessMainMenu(menuSelction);
                         break;
                 }

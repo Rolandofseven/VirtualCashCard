@@ -22,7 +22,7 @@ namespace VirtualCashCard.Tests
             User user = userRepo.GetUsersByCreds("bob", 5555);
 
             //Assert
-            Assert.AreEqual(user, null);
+            Assert.AreEqual(null, user);
         }
 
         [TestMethod]
@@ -35,7 +35,7 @@ namespace VirtualCashCard.Tests
             User user = userRepo.GetUsersByCreds("roland", 1234);
 
             //Assert
-            Assert.AreEqual(user.UserId, 1);
+            Assert.AreEqual(1, user.UserId);
         }
 
 

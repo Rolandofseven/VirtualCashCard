@@ -17,7 +17,7 @@ namespace VirtualCashCard.Tests
             decimal accountBalance = bankAccount.GetCurrentBalance();
 
             //Assert
-            Assert.AreEqual(accountBalance, 500);
+            Assert.AreEqual(500, accountBalance);
         }
 
         [TestMethod]
@@ -34,7 +34,7 @@ namespace VirtualCashCard.Tests
             decimal accountBalance = bankAccount.GetCurrentBalance();
 
             //Assert
-            Assert.AreEqual(accountBalance, 750);
+            Assert.AreEqual(750, accountBalance);
         }
 
        

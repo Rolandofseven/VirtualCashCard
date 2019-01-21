@@ -8,7 +8,7 @@ namespace VirtualCashCard.States
 {
     public class MainMenuState
     {
-        public int GetNextScreen()
+        public int ShowScreen()
         {
             int menuItemSelected;
 

@@ -29,6 +29,11 @@ namespace VirtualCashCard.States
 
             User user = _userRepository.GetUsersByCreds(nameEntered, pinNumber);
 
+            if (user == null)
+            {
+                Console.WriteLine("User not found");
+            }
+
             return user;
         }
     }
